@@ -8,7 +8,6 @@
   <title>Java Web Programming: Movie List</title>
 </head>
 <body>
-  <div id="wrapper">
     <div class="container">
     <div class="hero-unit">
       <h1>View All Movies</h1>
@@ -26,7 +25,7 @@
 
           <c:forEach var='movie' items="${movies}">
 
-            <div class="span10 movieElement">
+            <div class="span10 movieElement container">
 
                 <h2>${movie.title}</h2>
                 <img src="${movie.imgURL}" alt="${movie.title} image">
@@ -49,6 +48,5 @@
   <%@ include file="includes/footer.jsp" %>
   </div>
   <%@ include file="includes/scripts.jsp" %>
-  </div>
 </body>
 </html>

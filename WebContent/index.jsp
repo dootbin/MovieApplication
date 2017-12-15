@@ -8,7 +8,6 @@
   <title>Java Web Programming: Index</title>
 </head>
 <body>
-  <div id="wrapper">
     <div class="container">
     <div class="hero-unit">
       <h1>Welcome to Java Web Programming</h1>
@@ -25,6 +24,5 @@
   <%@ include file="includes/footer.jsp" %>
   </div>
   <%@ include file="includes/scripts.jsp" %>
-  </div>
 </body>
 </html>
