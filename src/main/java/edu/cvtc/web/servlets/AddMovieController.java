@@ -46,7 +46,7 @@ public class AddMovieController extends HttpServlet {
 			
 				if (Strings.isNullOrEmpty(imgURL)) {
 					
-					imgURL = "./assets/img/default.png";
+					imgURL = "./assets/img/noImage.jpg";
 					
 				} 
 				
@@ -68,15 +68,15 @@ public class AddMovieController extends HttpServlet {
 			
 			e.printStackTrace();
 			request.setAttribute("message", e.getMessage());
-			target = "addMovie.jsp";
+			target = "error.jsp";
+			
 		} catch (NumberFormatException e) {
 			
 			e.printStackTrace();
-			request.setAttribute("message", "Lenth must be a valid number!");
+			request.setAttribute("message", "Length must be a valid number!");
 			target = "addMovie.jsp";
 			
 		}
-		
 		
 		request.getRequestDispatcher(target).forward(request, response);
 		

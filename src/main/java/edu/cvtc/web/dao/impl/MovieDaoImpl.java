@@ -27,7 +27,7 @@ import edu.cvtc.web.util.WorkbookUtility;
 public class MovieDaoImpl implements MovieDao {
 	
 	private static final String DROP_TABLE_MOVIE = "DROP TABLE IF EXISTS movie;";
-	private static final String CREATE_TABLE_MOVIE = "CREATE TABLE movie(id integer primary key autoincrement, title text, director text, length integer, imgURL text);";
+	private static final String CREATE_TABLE_MOVIE = "CREATE TABLE movie(id integer primary key autoincrement, title text, director text, lengthInMinutes integer, imgURL text);";
 	private static final String SELECT_ALL_FROM_MOVIE = "SELECT * FROM movie;";
 	
 	
@@ -52,7 +52,7 @@ public class MovieDaoImpl implements MovieDao {
 			
 			for (final Movie movie : movies) {
 				
-				final String insertValues = "INSERT INTO movie (title, director, length, imgURL) "
+				final String insertValues = "INSERT INTO movie (title, director, lengthInMinutes, imgURL) "
 						+ "VALUES ('"   + movie.getTitle() + "', '"
 										+ movie.getDirector() + "', '"
 										+ movie.getLengthInMinutes() + "', '"

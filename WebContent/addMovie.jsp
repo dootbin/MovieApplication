@@ -14,21 +14,27 @@
 	<%@ include file="includes/nav.jsp" %>
     <div class="container">
      
-     	<form action="AddMovie" method="post">
-     		<label for="title"><strong>Title: </strong></label>
-     		<input name="title">
-      		<br>    		
-     		<label for="director"><strong>Director: </strong></label>
-     		<input name="director">
-      		<br>    		
-     		<label for="lengthInMinutes"><strong>Length In Minutes: </strong></label>
-     		<input name="lengthInMinutes">
-     		<br>     		
-     		<label for="imgURL"><strong>Image URL: </strong></label>
-     		<input name="imgURL">
-     		<br>
-     		<input type="submit" value="Add Movie">
-     	</form>
+		<form action="AddMovie" method="post">
+		  <table>
+		    <tr>
+		      <td><label for="title"><strong>Title: </strong></label></td>
+		      <td><input name="title"></td>
+		    </tr>
+		    <tr>
+		      <td><label for="director"><strong>Director: </strong></label></td>
+		      <td><input name="director"></td>
+		    </tr>
+		    <tr>
+		      <td><label for="lengthInMinutes"><strong>Length In Minutes: </strong></label></td>
+		      <td><input name="lengthInMinutes"></td>
+		    </tr>
+		    <tr>
+		      <td><label for="imgURL"><strong>Image URL(Not required): </strong></label></td>
+		      <td><input name="imgURL"></td>
+		    </tr>
+		  </table>
+		  <input type="submit" value="Add Movie">
+		</form>
 		<p>${message}</p>
      
     </div>
