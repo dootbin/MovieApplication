@@ -12,7 +12,7 @@
     <div class="hero-unit">
       <h1>Welcome to Java Web Programming</h1>
     </div>
-		<%@ include file="includes/nav.jsp" %>
+    <%@ include file="includes/nav.jsp" %>
     <div class="container">
       <p>
         Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
